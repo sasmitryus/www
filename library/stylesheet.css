@@ -1,0 +1,112 @@
+body {margin: 0; padding: 0;}
+header {width: 100%;}
+main {width: 100%;}
+footer {width: 100%;}
+ul{
+    margin: 0;
+     padding: 0; 
+     list-style: none;}
+
+nav {float: left 5%;
+     width: 100%; /*tamanho do menu na horizontal (o quanto vai preencher)*/
+     background: #5a70e9; /*cod de fundo do menu*/
+      font-weight: lighter; /*tipo da letra...(negrito..italico..etc)*/
+       font-family: Verdana,sans-serif; /*font da letra*/
+      color: #FFFFFF;/*cor do texto do menu*/
+      text-align: center; }/*alinhamento do texto*/
+    nav li{float: left;}
+
+
+/*Smartphone*/
+@media only screen and (max-width: 480px){
+    nav{height: 50px; /*quando a tela for menor que 481px a barra do menu diminui*/
+    padding-left:5%; }
+
+    nav li{width: 100%; display: none;}
+
+    .jumbotron{display: none;}/*tira o componente JUMBOTRON do modo SMARTPHONE*/
+
+    .ind-botao{
+        position: absolute;
+        top: 19px; /*alinhamanto do botao dentro do menu (cima e baixo)*/
+        width: 95%;
+        right: 0px;
+        left:52px ;
+        cursor: pointer;
+        padding-right:10%;
+        text-align: right;
+    }
+    .ind-logo{
+        position: absolute;
+        width: 25%;
+        left: 0px ;
+        top: 20px;
+        text-align: center;
+        
+    }
+    #logomenutablet{display: none;}
+    #logomenudesktop{display: none;}
+    .ind-logo img{
+        max-height: 55px; /*vai ter o maximo de tamanho referente aos 25% feito no WIDTH acima*/       
+    }
+  
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px)and (max-width: 768px){
+nav{height: 50px;/*quando a tela for maior que 481px a barra do menu aumenta*/
+padding-left: 5px;}
+    nav li{
+        width: 100%;
+        display: none;}
+        
+        .jumbotron{display: none;}
+
+    .ind-botao{
+        position: absolute;
+        top: 19px;
+        width: 95%;
+        right:0px ;
+        left:52px;
+        cursor: pointer;
+        padding-right: 10%;
+        text-align: right;
+    }
+    #logomenusmartphone{display: none;}
+    #logomenudesktop{display: none;}
+    .ind-logo{
+        position: absolute;
+        width: 25%;
+        left: 0px ;
+        top: 20px;
+        text-align: center;        
+    }
+    .ind-logo img{
+        max-height: 55px; /*vai ter o maximo de tamanho referente aos 25% feito no WIDTH acima*/       
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    nav{
+        height: 40px; /*quando a tela for maior que 481px a barra do menu aumenta*/
+        padding-left: 5%; /*alinha os textos do menu (direitsa ou esquerda)*/
+        padding-top: 0.5%;}/*alinha os textos do menu (cima ou baixo)*/
+
+    nav li{width: 11.8%;}
+    .ind-botao{display: none;}/*no modo desktop nao vai mostrar esse botao(adicinado no html)*/
+
+    #logomenutablet{display: none;}
+    #logomenusmartphone{display: none;}
+    .ind-logo{
+        position: absolute;
+        width: 25%;
+        left: 0px ;
+        top: 0px;
+        text-align: center;
+        
+    }
+    .ind-logo img{
+        max-width: 100%; /*vai ter o maximo de tamanho referente aos 25% feito no WIDTH acima*/       
+    }
+}

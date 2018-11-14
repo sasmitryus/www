@@ -1,0 +1,18 @@
+{
+    "name": "login/sas",
+    "description": "S.A.S. Vetor Sistemas",
+    "authors": [
+        {
+            "name": "Lucas Pinheiro e Willian Maesato",
+            "email": "sasmitryus@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{ // PSR=Php Standards Recommendations
+            "Classes\\":"../Class/",
+            "Models\\":"../Models/",
+            "Traits\\":"../Traits/"
+        }
+    }    
+}

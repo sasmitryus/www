@@ -1,0 +1,43 @@
+body{     
+     background-image: url('../img/bg_login_2.jpg');
+     -webkit-background-size: cover;/*preencher a logo na tela toda*/
+     -o-background-size: cover;/*preencher a logo na tela toda*/
+     -moz-background-size: cover;/*preencher a logo na tela toda*/
+     background-size: cover; /*preencher a imagem de backgroung na tela toda*/
+       
+    padding-top: 100px;/*centralização do form na tela*/
+    padding-bottom: 110px;/*centralização do form na tela*/
+
+    /*background-color:#D3D3D3;*/
+}
+.form-login{
+    max-width: 480px; /*reduz o tamanho do form*/
+    padding: 15px; /*faz a "margem" geral (15 top 15 botton left e rigth)dentro do Form login*/
+    margin:0 auto; /*FAZ O FORM FICAR NO MEIO DA TELA*/
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px #293846;/*sombra em volta do form login*/
+    
+}
+.form-login-header{
+    margin-left: 60px; /*centralizar a LOGO na tela*/
+    padding-top: 10px;/*espaçamento na parte de cima da logo*/
+    
+}
+.form-login .form-login-header{
+    margin-bottom: 10px; /*espaçamento entre a logo e input email*/
+}
+
+/*SMARTHFONE*/
+@media screen and (max-width: 410px) {
+    .form-login-header{
+       margin-left: 10px; /*centralizar a LOGO na tela*/
+       max-width:200px;
+       max-height:150px;
+       width: auto;
+       height: auto;
+    }
+  }
+
+
+

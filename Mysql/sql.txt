@@ -1,0 +1,32 @@
+teste maranhao
+create database db_help_mitryus
+
+
+
+use db_help_mitryus
+
+CREATE TABLE `tb_login`(
+
+  `Id` int(11) NOT NULL,
+ 
+  `Nome` varchar(45) DEFAULT NULL,
+
+  `Email` varchar(100) DEFAULT NULL,
+
+  `Email_rec` varchar(100) NOT NULL,
+ 
+  `Senha` varchar(50) DEFAULT NULL,
+ 
+  `Nivel` int(11) DEFAULT '1',
+ 
+  `Logado` int(11) DEFAULT '0',
+ 
+  `Img` varchar(200) DEFAULT 'img'
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+INSERT INTO `tb_login` (`Id`, `Nome`, `Email`, `Email_rec`, `Senha`, `Nivel`, `Logado`, `Img`) VALUES
+
+(1, 'Lucas Pinheiro', 'lucas.pinheiro@vetorsistemas.com.br', '', 'vtsfdup', 2, 1, 'lucas.jpg'),
+
+(2, 'Willian Maesato', 'willian.maesato@vetorsistemas.com.br', '', 'vtsfdup', 2, 1, 'HAPP-5128 loja 09(4).jpg');
