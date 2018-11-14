@@ -63,4 +63,16 @@ if(isset($_POST['Img'])){
 }else{ $Img="default.jpg"; }
 /*Img*/
 
+/*Validação de senha no email*/
+$token=bin2hex(random_bytes(64));
+
+$arrVar=[
+    "Nome"=>$Nome,
+    "Email"=>$Email,
+    "Email_rec"=>$Email_rec,
+    "Senha"=>$Senha,
+    "Nivel"=>$Nivel,
+    "Logado"=>$Logado,
+    "Img"=>$Img,
+];
 ?>

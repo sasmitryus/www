@@ -1,22 +1,10 @@
 <?php
-include("../Includes/variaveis.php");
-include("../Class/ClassCrud.php");
+$validate= new Classes\ClassValidate();
+/*$validate->validateFields($_POST);
+$validate->validateFields($Nome);
+$validate->validateFields($Email);
+$validate->validateFields($Senha);
+var_dump($validate->getErro());*/
 
-$Crud=new ClassCrud();
-$Crud->insertDB(
-        "tb_login",
-        "?,?,?,?,?,?,?,?",
-        array(
-            $Id,
-            $Nome,
-            $Email,
-            $Email_rec,
-            $Senha,
-            $Nivel,
-            $Logado,
-            $Img
-        )
-);
-
-echo "Cadastro Realizado com Sucesso!";
+$validate->validateFinalCad($arrVar);
 ?>

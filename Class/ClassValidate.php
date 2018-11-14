@@ -5,6 +5,7 @@ namespace Classes;
 class ClassValidate{
 
     private $erro=[];
+    private $cadastro=[];
 
     public function getErro()
     {
@@ -31,6 +32,23 @@ class ClassValidate{
             $this->setErro("Preencha todos os dados!");
             return false;
         }
+    }
+
+     #Validação se o dado é um email
+     public function validateEmail($par)
+     {
+         if(filter_var($par, FILTER_VALIDATE_EMAIL)){
+             return true;
+         }else{
+             $this->setErro("Email inválido!");
+             return false;
+         }
+     }
+
+    #Validação final do cadastro
+    public function validateFinalCad($arrVar)
+    {
+        $this->cadastro->insertCad($arrVar);
     }
 }
 ?>

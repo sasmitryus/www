@@ -1,6 +1,3 @@
-<?php
- include("../Class/ClassCrud.php");
-?>
 <html lang="pt-br">
 
 <head>
@@ -46,7 +43,7 @@
 
 <body class="container">
 
-    <form method="POST" class="form-login" name="FormCadastro" id="FormCadastro" action="../controller/ControllerCadastro.php">
+    <form method="POST" class="form-login" name="FormCadastro" action="../controller/ControllerCadastro" id="FormCadastro">
 
         <!--Logo-->
         <div class="row">

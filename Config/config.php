@@ -12,7 +12,6 @@ define('DIRCSS',DIRPAGE.'library/css/');
 define('DIRJS',DIRPAGE.'library/js/');
 
 #Acesso ao db
-
 define('HOST',"localhost");
 define('DB',"db_help_mitryus");
 define('USER',"root");
