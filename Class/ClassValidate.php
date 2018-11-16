@@ -2,10 +2,17 @@
 
 namespace Classes;
 
+use Models\ClassCadastro;
+
 class ClassValidate{
 
     private $erro=[];
-    private $cadastro=[];
+    private $cadastro;
+
+    public function __construct()
+    {
+        $this->cadastro=new ClassCadastro;
+    }
 
     public function getErro()
     {

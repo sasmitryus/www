@@ -7,8 +7,8 @@ class ClassCadastro extends ClassCrud{
     public function insertCad($arrVar)
     {
         $this->insertDB(
-          "users",
-          "?,?,?,?,?,?,?",
+          "tb_login",
+          "?,?,?,?,?,?,?,?",
                 array(
                     0,
                     $arrVar['Nome'],
