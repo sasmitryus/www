@@ -3,10 +3,13 @@ if(isset($_POST['Nome'])){$Nome=filter_input(INPUT_POST,'Nome',FILTER_SANITIZE_F
 if(isset($_POST['Email'])){$Email=filter_input(INPUT_POST,'Email',FILTER_VALIDATE_EMAIL);}else{$Email=null;}
 if(isset($_POST['Email_rec'])){$Email_rec=filter_input(INPUT_POST,'Email_rec',FILTER_SANITIZE_FULL_SPECIAL_CHARS);}else{$Email_rec=null;}
 if(isset($_POST['Senha'])){$Senha=filter_input(INPUT_POST,'Senha',FILTER_SANITIZE_FULL_SPECIAL_CHARS);}else{$Senha=null;}
+if(isset($_POST['SenhaConf'])){$SenhaConf=$_POST['SenhaConf'];}else{$SenhaConf=null;}
 if(isset($_POST['Nivel'])){$Nivel=filter_input(INPUT_POST,'Nivel',FILTER_SANITIZE_FULL_SPECIAL_CHARS);}else{$Nivel=null;}
 if(isset($_POST['Logado'])){$Logado=filter_input(INPUT_POST,'Logado',FILTER_SANITIZE_FULL_SPECIAL_CHARS);}else{$Logado=null;}
 if(isset($_POST['Img'])){$Img=filter_input(INPUT_POST,'Img',FILTER_SANITIZE_FULL_SPECIAL_CHARS);}else{$Img=null;}
+if(isset($_POST['g-recaptcha-response'])){$gRecaptchaResponse=$_POST['g-recaptcha-response'];}else{$gRecaptchaResponse=null;}
 
+if(isset($_POST['g-recaptcha-response'])){$gRecaptchaResponse=$_POST['g-recaptcha-response'];}else{$gRecaptchaResponse=null;}
 $arrVar=[
     "Nome"=>$Nome,
     "Email"=>$Email,

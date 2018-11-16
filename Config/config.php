@@ -17,5 +17,8 @@ define('DB',"db_help_mitryus");
 define('USER',"root");
 define('PASS',"");
 
+#Outras informações
+define("SITEKEY","6LerOXsUAAAAABvE3ljacY7O6WxBkwPWzzBED669");
+define("SECRETKEY","6LerOXsUAAAAAAtB2L17pvpKpzft5Gvqs8HTNnFC");
 
 ?>

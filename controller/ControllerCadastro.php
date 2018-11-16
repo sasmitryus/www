@@ -1,10 +1,12 @@
 <?php
 $validate= new Classes\ClassValidate();
-/*$validate->validateFields($_POST);
-$validate->validateFields($Nome);
-$validate->validateFields($Email);
-$validate->validateFields($Senha);
-var_dump($validate->getErro());*/
+$validate->validateFields($_POST);
+$validate->validateEmail($Email);
+$validate->validadeConfSenha($Senha,$SenhaConf);
+$validate->validateStrongSenha($Senha);
+$validate->validateIssetEmail($Email);
+var_dump($validate->validateCaptcha($gRecaptchaResponse));
+var_dump($validate->getErro());
 
-$validate->validateFinalCad($arrVar);
+/*$validate->validateFinalCad($arrVar);*/
 ?>

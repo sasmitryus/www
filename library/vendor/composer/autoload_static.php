@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit02fb2f2dcb349b0e98ebd4b0e5b4e84d
 {
     public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'ZxcvbnPhp\\' => 10,
+        ),
         'T' => 
         array (
             'Traits\\' => 7,
@@ -22,6 +26,10 @@ class ComposerStaticInit02fb2f2dcb349b0e98ebd4b0e5b4e84d
     );
 
     public static $prefixDirsPsr4 = array (
+        'ZxcvbnPhp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bjeavons/zxcvbn-php/src',
+        ),
         'Traits\\' => 
         array (
             0 => __DIR__ . '/../..' . '/../Traits',

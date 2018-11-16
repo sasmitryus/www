@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../frameworks/bootstrap-4.1.3/css/bootstrap.min.css">
     <!--JS BOOTSTRAP-->
     <script src="../frameworks/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <script src="../library/javascript.js"></script>
     <!--ICONES-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -34,6 +35,7 @@
 
     <!--icone da pagina (FAVICON)-->
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    
 
 <script>
     
@@ -91,6 +93,21 @@
                autofocus>
        </div>
 
+        <!--Senha Conferencia-->
+        <div class="input-group mb-3">
+           
+           <div class="input-group-prepend">
+               <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock" style="font-size:24px;color:#8181F7"></i></span>
+           </div>
+            <input type="password" class="form-control" id="SenhaConf" name="SenhaConf" placeholder="Confirmação de Senha" aria-label="Confirmação de Senha" required
+               autofocus>
+       </div>
+
+               <!--Email recuperação-->
+               <div class="input-group mb-3">
+           <input type="hidden" class="form-control" id="g-recaptcha-response" name="g-recaptcha-response">
+       </div>
+       
         <!--Botao-->
         <div class="row col-12">
             <div class="col-5">
@@ -113,6 +130,8 @@
             </div>
         </div>
     </form>
+
+    <script src='https://www.google.com./recaptcha/api.js?render="<?php.SITEKEY.?>"'></script>
 </body>
 
 </html>

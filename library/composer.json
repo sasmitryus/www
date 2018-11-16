@@ -7,9 +7,11 @@
             "email": "sasmitryus@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "bjeavons/zxcvbn-php": "^0.4"
+    },
     "autoload":{
-        "psr-4":{ // PSR=Php Standards Recommendations
+        "psr-4":{ 
             "Classes\\":"../Class/",
             "Models\\":"../Models/",
             "Traits\\":"../Traits/"

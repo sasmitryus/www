@@ -21,5 +21,19 @@ class ClassCadastro extends ClassCrud{
                 )
         );
     }
+
+    #Verificar se o email já existe no banco de dados
+    public function getIssetEmail($Email)
+    {
+        $b=$this->selectDB(
+            "*",
+            "tb_login",
+            "where Email=?",
+            array(
+                $Email
+            )
+        );
+        return $r=$b->rowCount();
+    }
 }
 ?>
